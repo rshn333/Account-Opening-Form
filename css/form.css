@@ -1,0 +1,40 @@
+/* #end{
+    margin-left: 6%;
+}
+#middle{
+    margin-left: 6%;
+} */
+#card-content{
+    margin-top: 30px;
+}
+.required{
+    color: red;
+    background: #fff;
+}
+.toggle{
+    width: 300px;
+}
+.form-wrap{
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+}
+ .content{
+    font-size: 17px;
+}
+
+.label-name{
+    position: absolute;
+    top: -17px;
+    left: 16px;
+    background: #fff;
+    padding: 3px;
+}
+
+.form-wrap > input[type=text]{
+    text-transform: capitalize;
+}
+#next.btn-success{
+    background-color: #8dc63f;
+    border-color: #8dc63f;
+}

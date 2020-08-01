@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Online Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<title>Online Form</title>
+</head>
+<body>
+	<div class="Navbar">
+		<div class="Navbar-link Navbar-link-toggle">
+		  <i class="fa fa-bars"></i>
+		</div>
+	  <nav class="Navbar-items">
+		<div class="Navbar-link">
+			<a id="a1" href="">Branches & ATMs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a2" href="">FAQs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a3" href="">Contact Us</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a4" href="">Interest Rate</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a5" href="">Careers</a>
+		</div>
+	  </nav>
+	  <nav class="Navbar-items Navbar-items-right">
+		<div class="Navbar-link d-flex">
+			<input class="form-control" type="text" name="search" placeholder="Search">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+	  </nav>
+	</div>
+<div id="img_kamana">
+			<a href="index.html"><img src="img/kamana.png"></a>
+</div>
+
+<div class="container">
+	<h2 class="text-center">Open a New Account Online<hr></h2>
+	<br>
+	<div class="card" id="firstCard">
+		<div class="card-header" id="doc">
+		<label><i class="fa fa-file"></i>&nbsp;Documents Required</label>
+		</div>
+		<div id="tableCard" class="card-body">
+			<table id="table" class="table table-bordered table-striped">
+				<thead>
+					<tr id="on_head">
+						<th></th>
+						<th>Nepalese Citizen</th>
+						<th>Non-Nepalese Citizen(NRN)</th>
+					</tr>
+				</thead>
+				<tbody id="on_body">
+					<tr>
+						<td>1 PP Size Photo</td>
+						<td class="text-center"><i class="fa fa-check text-center"></i></td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+					</tr>
+					<tr>
+						<td>Copy of Citizenship Card/Valid passport & Visa</td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+					</tr>
+					<tr>
+						<td >NRN Card</td >
+						<td class="text-center"><i class="fa fa-times" style="color: red;"></i></td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+					</tr>
+					<tr>
+						<td>Source of FCY earning certificate (For FCY Account only)	</td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+						<td class="text-center"><i class="fa fa-check"></i></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<br><br>
+	<h2 class="text-center" id="acc_type">Account Types<hr></h2>
+	<br>
+	<div class="row" >
+		<div class="col-sm-4">
+			<div class="card" id="card0">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">4% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 1,000.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div te>
+		<div class="col-sm-4">
+			<div class="card" id="card1">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">3.5% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 100.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card" id="card2">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">5% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 1,000.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div>
+		</div>
+	<div style="min-height: 50px;"></div>
+	<div class="row" >
+		<div class="col-sm-4">
+			<div class="card" id="card5">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">6% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 2,500.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card" id="card3">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">5.5% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 1,000.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="card" id="card4">
+				<div class="card-header" id="chead"> Normal Saving</div>
+					<div class="card-body">
+						<div>
+							<h3 id="interest">6.5% p.a.</h3>
+							<p id="minBal">Minimum Balance Rs. 1,000.00</p>
+							<p id="quarterInterest">Quarterley Interest</p>
+						</div>
+					<button class="btn" id="apply"><a href="form.html">Apply</a></button>
+					<button class="btn" id="details"><a href="#">View Details</a></button>
+
+					</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<div style="min-height: 50px;"></div>
+<footer style="min-height: 270px;">
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-3">
+			<ul>
+				<li id="fhead">Popular Products</li>
+				<li><a href="">Career</a></li>
+				<li><a href="">Mortgage Loan</a></li>
+				<li><a href="">Business Loan</a></li>
+				<li><a href="">KSBBL Remit</a></li>
+				<li><a href="">Swarnim Surakchit Bachat Khata</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<ul>
+				<li id="fhead">Other Links</li>
+				<li><a href="">Banking Hour</a></li>
+				<li><a href="">Standard Tariff Charge</a></li>
+				<li><a href="">Interest Rate</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<ul>
+				<li id="fhead">Media</li>
+				<li><a href="">News and Event</a></li>
+				<li><a href="">Gallery</a></li>
+				
+			</ul>
+		</div>
+		<div class="col-sm-3">
+			<p id="right_footer"><u>Connect with us</u></p>
+			<ul class="d-flex" id="social_media">
+				<li><i class="fa fa-facebook"><a href=""></a></i></li>
+				<li class=><i class="fa fa-twitter"><a href=""></a></i></li>
+				<li><i class="fa fa-youtube"><a href=""></a></i></li>
+				<li><i class="fa fa-linkedin"><a href=""></a></i></li>
+			</ul>
+			<p id="right_footer"><u>Payment Partner</u></p>
+			<img id="esewa" src="img/esewa.png">
+		</div>
+	</div>
+	<hr>
+		<p class="text-center">Copyright &copy; 2020 by Kamana Sewa Bikas Bank Ltd.</p>
+	</div>
+</footer>
+<!-- <script type="text/javascript">
+    function classToggle() {
+	const navs = document.querySelectorAll('.navbar-items')
+	navs.forEach(nav => nav.classList.toggle('navbar-toggleShow'));
+}
+	document.querySelector('.navbar-link-toggle')
+	.addEventListener('click', classToggle);
+</script> -->
+<script type="text/javascript">
+    function classToggle() {
+const navs = document.querySelectorAll('.Navbar-items')
+
+navs.forEach(nav => nav.classList.toggle('Navbar-toggleShow'));
+}
+
+document.querySelector('.Navbar-link-toggle')
+.addEventListener('click', classToggle);
+    </script>
+</body>
+</html>

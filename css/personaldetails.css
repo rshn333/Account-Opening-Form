@@ -1,0 +1,47 @@
+.card-header{
+    text-transform: uppercase;
+    background-color: #0c4da2;
+    color: white;
+    font-weight: bold;
+}
+
+
+#jumbo.custom-radio{
+	height: 20px;
+	text-align: center;
+}
+
+#proceed, #add{
+	margin-top: 10px;
+	margin-left: 50%;
+	background-color:#0c4da2;
+}
+span{
+	color: red;
+}
+.charge-table {
+	display:none;
+}
+.jumbotron.d-flex .jumbo1{
+	margin-left: 300px;
+}
+.jumbotron.d-flex .custom-radio{
+	margin-left: 30px;
+}
+.select2-container .select2-selection--single {
+	height: 39.5px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+	height:28px;
+	margin: 5px 0 0 10px;
+}
+.select2-results__option{
+	color: black;
+}
+.single{
+	height: 39.5px;
+	width: 200px;
+}
+.mobile{
+	visibility: hidden;
+}

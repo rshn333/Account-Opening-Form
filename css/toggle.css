@@ -1,0 +1,9 @@
+.btn.toggle-on{
+	background-color:#8dc63f;
+	border-color: #8dc63f;
+	color: white;
+}
+.btn.toggle-off{
+	background-color:#0c4da2;
+	border-color:#0c4da2;
+}

@@ -1,0 +1,95 @@
+/* Media Query For Index Page */
+@media only screen and (max-width: 1100px) {
+    .Navbar-items,
+    .Navbar {
+      flex-direction: column;
+    }
+      
+  .Navbar-items {
+      display:none;
+      /* margin-top: -20px; */
+    }
+      
+    .Navbar-link a{
+      padding: 2px 2px 2px 2px;
+  }
+  .Navbar-items-right {
+      margin-left:0;
+      margin-top: 10px;
+    }
+  #a2, #a3, #a4, #a5{
+      margin-bottom: -10px;
+  }
+  .Navbar-toggleShow {
+      display: flex;
+    }
+      
+  .Navbar-link-toggle {
+      align-self: flex-end;
+      display: initial;
+      cursor: pointer;
+     } 
+     .container { width: 100%; padding: 0px } 
+  
+  #card:hover{
+       transform: scale(1.01);
+      }
+  #card1, #card2, #card3, #card4{
+      margin-top: 50px;
+  }
+  /* #apply{
+      margin-left: 120px;
+  }
+  #details{
+      margin:0;
+  } */
+  #img_kamana img{
+   margin: 5px;
+}
+[class="col-sm-3"] {
+    width: 100%;
+  }
+  [class="col-sm-4"] {
+    width: 90%;
+    margin-left: 5%;
+  }
+  #tableCard{
+      width: 347px;
+  }
+
+  /* Media Query For Form Page */
+#saturation{
+    margin-top: 20px;
+}
+
+#account-type{
+    padding: 0;
+}
+
+#saturation-type{
+   
+    display: grid;  
+    grid-template-columns: 100px 100px 100px;  
+    grid-template-rows: 50px 50px;
+
+    /* white-space: pre-wrap; */
+}
+
+#citizen-apply{
+    margin-top: 20px;
+}
+#next{
+    margin-right: 45px;
+}
+.select2-container .select2-selection--single{
+    width: 318px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    left: 298px;
+}
+ /* #jumbo1{
+     margin-left: 0;
+ } */
+
+
+  }

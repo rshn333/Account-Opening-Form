@@ -1,0 +1,23 @@
+#select{
+	margin-left: 20px;
+}
+
+#form_head{
+		background-color: #8dc63f;
+
+}
+
+#jumbo{
+	height: 20px;
+	text-align: center;
+}
+
+
+#proceed, #add{
+	margin-top: 10px;
+	margin-left: 500px;
+	background-color:#0c4da2;
+}
+span{
+	color: red;
+}

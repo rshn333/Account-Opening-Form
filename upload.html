@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Online Form</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaQuery.css">
+	<link rel="stylesheet" type="text/css" href="css/upload.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="nepali.datepicker.v2.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="upload.js"></script>
+	<script src="bot.js" type="text/javascript"></script>
+	<title>Upload</title>
+</head>
+<body>
+	<div class="Navbar">
+		<div class="Navbar-link Navbar-link-toggle">
+		  <i class="fa fa-bars"></i>
+		</div>
+	  <nav class="Navbar-items">
+		<div class="Navbar-link">
+			<a id="a1" href="">Branches & ATMs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a2" href="">FAQs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a3" href="">Contact Us</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a4" href="">Interest Rate</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a5" href="">Careers</a>
+		</div>
+	  </nav>
+	  <nav class="Navbar-items Navbar-items-right">
+		<div class="Navbar-link d-flex">
+			<input class="form-control" type="text" name="search" placeholder="Search">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+	  </nav>
+	</div>
+<div id="img_kamana">
+			<a href="index.html"><img src="img/kamana.png"></a>
+</div>
+
+    <br>
+	<div class="container">
+		<div class="card">
+			<div class="card-header" id="upload_head">Upload Your Documents</div>
+			<div class="card-body d-flex">
+				<div class="row">
+					<div class="col-sm-4 jumbotron" id="jumbo">
+						<h6>Applicant's Passport Sized Photo<span>*</span></h6>
+						<div id="pp"></div>
+						<div id="dvProgress" style="width: 200px; min-width: 2em;"></div>
+					
+						<input id="photo" class="text text-danger" type="file" name="Photo" onchange="upload()"><br>
+						<input type="button" name="btnUpload" id="btnUpload" value="Upload" class="btn btn-primary hide" /><br>
+					
+						Upload PP Size Photo of Applicant.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+					</div>
+				
+					<div class="col-sm-4 jumbotron" id="jumbo">
+						<h6>Passport Front</h6>
+						<div id="pp-front"></div>
+						<div id="dvProgress1" style="width: 200px; min-width: 2em;"></div>
+						<input id="photo1" class="text text-danger" type="file" name="Passport" onchange="upload1()"><br>
+						<input type="button" name="btnUpload" id="btnUpload1" value="Upload" class="btn btn-primary hide" /><br>
+						Upload Passport Front Face Here.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+					</div>
+
+					<div class="col-sm-3 jumbotron" id="jumbo">
+						<h6>Valid Visa</h6>
+						<div id="visa"></div>
+						<div id="dvProgress2" style="width: 200px; min-width: 2em;"></div>
+						<input id="visa-photo" class="text text-danger" type="file" name="Photo" onchange="upload2()"><br>
+						<input type="button" name="btnUpload" id="btnUpload2" value="Upload" class="btn btn-primary hide" /><br>
+						Upload Valid Visa Here.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+					</div>
+
+					<div class="row">
+						<div class="col-sm-4 jumbotron" id="jumbo1">
+						<h6>Citizenship<span>*</span></h6>
+						<div id="citizen"></div>
+						<div id="dvProgress3" style="width: 200px; min-width: 2em;"></div>
+						<input id="citizen-photo" class="text text-danger" type="file" name="Passport" onchange="upload3()"><br>
+						<input type="button" name="btnUpload" id="btnUpload3" value="Upload" class="btn btn-primary hide" /><br>
+						Upload Citizenship Documents Here.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-4 jumbotron" id="jumbo2">
+						<h6>Signature Specimen<span>*</span></h6>
+						<div id="signature"></div>
+						<div id="dvProgress4" style="width: 200px; min-width: 2em;"></div>
+						<input id="sign-photo" class="text text-danger" type="file" name="Signature" onchange="upload4()"><br>
+						<input type="button" name="btnUpload" id="btnUpload4" value="Upload" class="btn btn-primary hide" /><br>
+						<p class="alert alert-danger" style="margin-top: 5px;">Please sign three signature serially and upload your signature.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.</p>
+						</div>
+
+						<div class="col-sm-3 jumbotron" id="jumbo2">
+						<h6>Utility Bill<span>*</span></h6>
+						<div id="utility"></div>
+						<div id="dvProgress5" style="width: 200px; min-width: 2em;"></div>
+						<input id="utility-photo" class="text text-danger" type="file" name="Passport" onchange="upload5()"><br>
+						<input type="button" name="btnUpload" id="btnUpload5" value="Upload" class="btn btn-primary hide" /><br>
+						Electricity bills or whatnot.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+						</div>
+
+						<div class="col-sm-4 jumbotron" id="jumbo2">
+						<h6>Address Verfication Documents</h6>
+						<div id="address"></div>
+						<div id="dvProgress6" style="width: 200px; min-width: 2em;"></div>
+						<input id="address-photo" class="text text-danger" type="file" name="Passport" onchange="upload6()"><br>
+						<input type="button" name="btnUpload" id="btnUpload6" value="Upload" class="btn btn-primary hide" /><br>
+						Documents of the Owner of the land.Only jpg/png/jpeg formats are allowed and maximum file size of 2MB only.
+						</div>
+					</div>
+				</div>
+				</div>
+				
+			</div>
+		</div>
+		
+
+		<a id="proceed1" href="message.html" class="btn btn-primary">Proceed  
+			<i class="fa fa-caret-right"></i>
+	</a>
+
+	</div>
+		<div style="min-height: 150px;"></div>
+		<footer>
+			<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-3">
+					<ul>
+						<li id="fhead">Popular Products</li>
+						<li><a href="">Career</a></li>
+						<li><a href="">Mortgage Loan</a></li>
+						<li><a href="">Business Loan</a></li>
+						<li><a href="">KSBBL Remit</a></li>
+						<li><a href="">Swarnim Surakchit Bachat Khata</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul>
+						<li id="fhead">Other Links</li>
+						<li><a href="">Banking Hour</a></li>
+						<li><a href="">Standard Tariff Charge</a></li>
+						<li><a href="">Interest Rate</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<ul>
+						<li id="fhead">Media</li>
+						<li><a href="">News and Event</a></li>
+						<li><a href="">Gallery</a></li>
+						
+					</ul>
+				</div>
+				<div class="col-sm-3">
+					<p id="right_footer"><u>Connect with us</u></p>
+					<ul class="d-flex" id="social_media">
+						<li><i class="fa fa-facebook"><a href=""></a></i></li>
+						<li class=><i class="fa fa-twitter"><a href=""></a></i></li>
+						<li><i class="fa fa-youtube"><a href=""></a></i></li>
+						<li><i class="fa fa-linkedin"><a href=""></a></i></li>
+					</ul>
+					<p id="right_footer"><u>Payment Partner</u></p>
+					<img id="esewa" src="img/esewa.png">
+				</div>
+			</div>
+			<hr>
+				<p class="text-center">Copyright &copy; 2020 by Kamana Sewa Bikas Bank Ltd.</p>
+			</div>
+		
+		</footer>
+		<script type="text/javascript">
+    function classToggle() {
+const navs = document.querySelectorAll('.Navbar-items')
+
+navs.forEach(nav => nav.classList.toggle('Navbar-toggleShow'));
+}
+
+document.querySelector('.Navbar-link-toggle')
+.addEventListener('click', classToggle);
+    </script>
+
+</body>
+</body>
+</html>

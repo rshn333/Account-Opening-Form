@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="nepali.datepicker.v2.2.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/personaldetailsMQ.css">
+    <link rel="stylesheet" href="css/personaldetails.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="nepali.datepicker.v2.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.12/dist/js/select2.min.js"></script>
+    <title>Personal Details</title>
+    <script type="text/javascript">
+        $(document).ready(function() {
+          $(".single").select2();
+        });
+        </script>
+        <style type="text/css">
+            #myModal,#myModal1{
+                width:350px;
+                height:550px;
+            }
+            #occupation_add{
+                display: none;
+            }
+        
+
+    }
+</style>
+</head>
+<body>
+	<div class="Navbar">
+		<div class="Navbar-link Navbar-link-toggle">
+		  <i class="fa fa-bars"></i>
+		</div>
+	  <nav class="Navbar-items">
+		<div class="Navbar-link">
+			<a id="a1" href="">Branches & ATMs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a2" href="">FAQs</a>
+		</div>
+		<div class="Navbar-link">
+			<a id="a3" href="">Contact Us</a id="a1">
+		</div>
+		<div class="Navbar-link">
+			<a id="a4" href="">Interest Rate</a id="a1">
+		</div>
+		<div class="Navbar-link">
+			<a id="a5" href="">Careers</a id="a1">
+		</div>
+	  </nav>
+	  <nav class="Navbar-items Navbar-items-right">
+		<div class="Navbar-link d-flex">
+			<input class="form-control" type="text" name="search" placeholder="Search">
+			<i class="fa fa-search"></i>
+		</div>
+	</div>
+	  </nav>
+	</div>
+<div id="img_kamana">
+			<a href="index.html"><img src="img/kamana.png"></a>
+</div>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-header" id="form_head">
+            Personal Information
+        </div>
+        <br>
+        <div class="card-body">
+            <div class="row">
+                 <div class="col-sm-3">
+                     <div class="form-wrap">
+                         <input id="nepaliDate" type="text" class="nepaliDate form-control content" data-ndpenglishinput="#englishDate">
+                         <label class="label-name">Date Of Birth(B.S)
+                             <span class="required" aria-required="true">*</span>
+                         </label>
+                     </div>
+                 </div>
+                 <div class="col-sm-3">
+                     <div class="form-wrap">
+                        <input id="englishDate" type="text" class="form-control content">
+                        <label class="label-name">Date Of Birth(A.D)
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-wrap">
+                        <label class="label-name">Gender
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                        <select class="form-control content">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-wrap">
+                        <select class="single form-control content">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                                <option value="separated">Separated</option>
+                                <option value="registered">Registered Partnership</option>
+                            </select>
+                            <label class="label-name">Marital Status
+                                <span class="required" aria-required="true">*</span>
+                            </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Nationality
+                            <span class="required" aria-required="true">*</span>
+                        </label class="label-name">
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-wrap"> 
+                        <select class="single form-control content">
+                               <option value="" disabled selected hidden>Select</option>
+                               <option value="pre">Preschool</option>
+                               <option value="ele">Elementary School</option>
+                               <option value="mid">Middle School</option>
+                               <option value="high">High School</option>
+                           </select>
+                           <label class="label-name">Education
+                               <span class="required" aria-required="true">*</span>
+                           </label>
+                       </div>
+                </div>
+            </div>
+                <hr>
+                    <h5>Citizenship Details</h5><br>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-wrap">
+                                <input type="text" class="form-control content">
+                                <label class="label-name">Citizenship No.
+                                    <span class="required" aria-required="true">*</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-wrap"> 
+                                <select class="single form-control content">
+                                    <option value="" disabled selected hidden>Select</option>
+                                    <option value="kathmandu">Kathmandu</option>
+                                    <option value="nuwakot">Nuwakot</option>
+                                    <option value="lalitpur">Lalitpur</option>
+                                    <option value="bhaktapur">Bhaktapur</option>
+                                </select>
+                                <label class="label-name">Place Of Issue
+                                    <span class="required" aria-required="true">*</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-wrap">
+                                <input type="text" class="form-control content">
+                                <label class="label-name">Office Of Issue</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-wrap">
+                                <input type="text" class="form-control content">
+                                <label class="label-name">PAN</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-wrap">
+                                <input id="nepaliDate1" type="text" class="nepaliDate form-control content" data-ndpenglishinput="#englishDate1">
+                                <label class="label-name">Date Of Issue(B.S.)</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-wrap">
+                                <input id="englishDate1" type="text" class="form-control content">
+                                <label class="label-name">Date Of Issue(A.D.)</label>
+                            </div>
+                        </div>
+                    </div>
+            <hr>
+            <h5>Passport Details</h5>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Passport No.</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Office Of Issue</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input id="nepaliDate2" type="text" class="nepaliDate form-control content" data-ndpenglishinput="#englishDate2">
+                        <label class="label-name">Date Of Issue(B.S.)</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input id="englishDate2" type="text" class="form-control content">
+                        <label class="label-name">Date Of Issue(A.D.)</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input id="nepaliDate3" type="text" class="nepaliDate form-control content" data-ndpenglishinput="#englishDate3">
+                        <label class="label-name">Date Of Expiry(B.S.)</label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input id="englishDate3" type="text" class="form-control content">
+                        <label class="label-name">Date Of Expiry(A.D.)</label>
+                    </div>
+                </div>
+            </div>
+        <br>
+        <div class="card">
+            <div class="card-header">
+                <label>Applicant's Address</label>
+            </div>
+            <h5 style="margin:10px 0 0 20px;">Permanent Address</h5>
+            
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-wrap">
+                            <input type="text" class="form-control content">
+                            <label class="label-name">Municipality/VDC
+                                <span class="required" aria-required="true">*</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-wrap">
+                            <select class="two single form-control content">
+                                <option value="" disabled selected hidden>Select</option>
+                                <option value="kathmandu">Kathmandu</option>
+                                <option value="nuwakot">Nuwakot</option>
+                                <option value="lalitpur">Lalitpur</option>
+                                <option value="bhaktapur">Bhaktapur</option>
+                            </select>
+                            <label class="label-name">Select District
+                                <span class="required" aria-required="true">*</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+             <div class="row">
+                 <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <input id="house-no" type="text" class="form-control content">
+                        <label class="label-name">House No.
+                        </label>
+                    </div>  
+                 </div>
+                 <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Street
+                        </label>
+                    </div>  
+                 </div>
+                 <div class="col-sm-4">
+                 <div class="form-wrap">
+                    <input type="text" class="form-control content">
+                    <label class="label-name">Ward No.
+                        <span class="required" aria-required="true">*</span>
+                    </label>
+                </div>
+            </div>
+             </div>
+             <div class="row">
+                 <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Resident Phone Number
+                        </label>
+                    </div>
+                 </div>
+                 <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Office Phone Number
+                        </label>
+                    </div> 
+                 </div>
+                 <div class="col-sm-4">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Mobile Number
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                 </div>
+             </div>
+             <div class="custom-control custom-checkbox mb-3 text-center">
+                <input type="checkbox" class="custom-control-input" id="temporary" name="address">
+                <label class="custom-control-label" for="temporary">Temporary Address Same As Permanent Address</label>
+              </div>
+             <h5>Temporary Address</h5>
+             <br>
+             <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <input type="text" class="form-control content">
+                        <label class="label-name">Municipality/VDC
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-wrap">
+                        <select class="single two form-control content">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="kathmandu">Kathmandu</option>
+                            <option value="nuwakot">Nuwakot</option>
+                            <option value="lalitpur">Lalitpur</option>
+                            <option value="bhaktapur">Bhaktapur</option>
+                        </select>
+                        <label class="label-name">Select District
+                            <span class="required" aria-required="true">*</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+         <div class="row">
+             <div class="col-sm-4">
+                <div class="form-wrap">
+                    <input type="text" class="form-control content">
+                    <label class="label-name">House No.
+                    </label>
+                </div>  
+             </div>
+             <div class="col-sm-4">
+                <div class="form-wrap">
+                    <input type="text" class="form-control content">
+                    <label class="label-name">Street
+                    </label>
+                </div>  
+             </div>
+             <div class="col-sm-4">
+             <div class="form-wrap">
+                <input type="text" class="form-control content">
+                <label class="label-name">Ward No.
+                    <span class="required" aria-required="true">*</span>
+                </label>
+             </div>
+            </div>
+         </div>
+         <div class="row">
+             <div class="col-sm-4">
+                <div class="form-wrap">
+                    <input type="text" class="form-control content">
+                    <label class="label-name">Resident Phone Number
+                    </label>
+                </div>
+             </div>
+             <div class="col-sm-4">
+                <div class="form-wrap">
+                    <input type="text" class="form-control content">
+                    <label class="label-name">Office Phone Number
+                    </label>
+                </div> 
+             </div>
+             <div class="col-sm-4">
+                <div class="form-wrap">
+                   <input type="text" class="form-control content">
+                   <label class="label-name">Mobile No.
+                       <span class="required" aria-required="true">*</span>
+                   </label>
+                </div>
+               </div>
+         </div>
+            </div>
+        </div>
+        <br>
+<div class="card">
+<div class="card-header" id="form_head">Family Details</div>
+<div class="card-body">
+<table id="desktop-table" class="table table-bordered">
+	<thead>
+		<tr>
+			<th>S.N.</th>
+			<th>Relation</th>
+			<th>Full Name</th>
+            <th>Citizenship No.</th>
+            <th>Date of Issue(B.S.)</th>
+            <th>Place of Issue</th>
+            <th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1.</td>
+			<td>Spouse</td>
+			<td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="spouseDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+        </tr>
+		<tr>
+			<td>2.</td>
+			<td>Father<span>*</span></td>
+			<td><input class="form-control" type="text" name="father" required></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="fatherDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>Mother<span>*</span></td>
+			<td><input class="form-control" type="text" name="mother" required></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="motherDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>4.</td>
+			<td>Grand Father<span>*</span></td>
+			<td><input class="form-control" type="text" name="grand-father" required></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="gfatherDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>5.</td>
+			<td>Son</td>
+			<td><input class="form-control" type="text" name="son"></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="sonDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>6.</td>
+			<td>Daughter</td>
+			<td><input class="form-control" type="text" name="daughter"></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="daughterDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>7.</td>
+			<td>Daugther-in-Law</td>
+			<td><input class="form-control" type="text" name="daughter-in-law"></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="d-in-lawDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                    <option value="kathmandu">Kathmandu</option>
+                    <option value="nuwakot">Nuwakot</option>
+                    <option value="lalitpur">Lalitpur</option>
+                    <option value="bhaktapur">Bhaktapur</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+		</tr>
+		<tr>
+			<td>8.</td>
+			<td>Father-in-Law</td>
+			<td><input class="form-control" type="text" name="father-in-law"></td>
+            <td><input class="form-control" type="text" name="spouse"></td>
+            <td><input class="datePicker form-control" id="f-in-lawDate" type="text" name="spouse"></td>
+            <td> <select class="single form-control content">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="kathmandu">Kathmandu</option>
+                <option value="nuwakot">Nuwakot</option>
+                <option value="lalitpur">Lalitpur</option>
+                <option value="bhaktapur">Bhaktapur</option>
+                <option value="arghakhanchi">Arghakhanchi</option>
+            </select></td>
+            <td>
+                <input type="checkbox" checked data-toggle="toggle" data-onstyle="success" data-offstyle="danger" data-on="Alive" data-off="Deadd">
+            </td>
+        
+		</tr>
+	</tbody>
+
+</table>
+</div>
+</div>
+<template>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>S.N.</th>
+			<th>Relation</th>
+            <th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1.</td>
+			<td>Spouse</td>
+			<td><button class="btn btn-success" onclick="document.getElementById('myModal').style.display='block'"><i class="fa fa-plus"></i>Add</button></td>
+        </tr>
+		<tr>
+			<td>2.</td>
+			<td>Father<span>*</span></td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>3.</td>
+			<td>Mother<span>*</span></td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>4.</td>
+			<td>Grand Father<span>*</span></td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>5.</td>
+			<td>Son</td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>6.</td>
+			<td>Daughter</td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>7.</td>
+			<td>Daugther-in-Law</td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+		<tr>
+			<td>8.</td>
+			<td>Father-in-Law</td>
+			<td><button class="btn btn-success"><i class="fa fa-plus"></i>Add</button></td>
+		</tr>
+	</tbody>
+</table>
+<!--Modal for Family Details-->
+    <div class="modal" id="myModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #0c4da2;color: white;">
+            <h4 class="modal-title" >Spouse</h4>
+          <span onclick="document.getElementById('myModal').style.display='none'" class="close" title="Close Modal" style="color: white;">×</span> 
+        </div>
+        <div class="modal-body">
+          <p>Full Name</p><input type="text" name="sName">
+          <p>Citizenship No</p><input type="text" name="sCitizenship">
+          <p>Place of Issue</p><input type="text" name="sPlaceOfIssue">
+          <p>Date of Issue</p><input type="text" name="sDateOfIssue"><br>
+          <input type="radio" name="status" value="alive" checked>Alive
+          <input type="radio" name="status" value="dead">Dead
+        </div>
+        <div class="modal-footer">
+        <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="btn btn-success">Add</button>       
+          </div>
+      </div>
+    </div>
+  </div>
+  
+</template>
+<!--Modal for Occupation Details-->
+		<div class="modal" id="myModal1">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: blue;color: white;">
+            <h4 class="modal-title" >Details</h4>
+          <span onclick="document.getElementById('myModal1').style.display='none'" class="close" title="Close Modal" style="color: white;">×</span> 
+        </div>
+        <div class="modal-body">
+          <p>Name of Organization</p><input type="text" name="oName">
+          <p>Address</p><input type="text" name="oAddress">
+          <p>Designation</p><input type="text" name="oDesignation">
+          <p>Estimated Annual Incom</p><input type="text" name="oIncome"><br>
+        </div>
+        <div class="modal-footer">
+        <button type="button" onclick="document.getElementById('myModal1').style.display='none'" class="btn btn-success">Add</button>       
+          </div>
+      </div>
+    </div>
+  </div>
+		<br>
+		<div class="card">
+			<div class="card-header" id="form_head">Occupation Details</div>
+			    <div class="card-body">
+                 <div class="form-wrap">
+                    <select id="select" class="single form-control content w-25" required>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="student">Student</option>
+                        <option value="housewife">Housewife</option>
+                        <option value="salaried">Salaried Person</option>
+                        <option value="unemployed">Unemployed</option>
+                    </select>
+                    <label class="label-name">Occupation
+                        <span class="required" aria-required="true">*</span>
+                    </label>
+                </div>
+                 <hr>
+                 <div id="occupation_add">
+                  <button class="btn btn-info" onclick="document.getElementById('myModal1').style.display='block'"><i class="fa fa-plus"></i></button>
+                  </div>
+                 <!-- <button class="btn" id="occupation_add"><i class="fa fa-plus"></i></button> -->
+                  <table class="table table-bordered" id="test1">
+                  	<thead>
+                  		<tr>
+                  			<th>Name of Organization</th>
+                  			<th>Address</th>
+                  			<th>Designation</th>
+                  			<th>Estimated Annual Income</th>
+                  		</tr>
+                  	</thead>
+                  	<tbody>
+                  		<tr id="test">
+                  			<td><input class="form-control" type="text" name="org_name"></td>
+                  			<td><input class="form-control" type="text" name="org_address"></td>
+                  			<td><input class="form-control" type="text" name="designation"></td>
+                  			<td><input class="form-control" type="text" name="income"></td>
+                  		</tr>
+                  	</tbody>
+                  </table>
+
+                  <template>
+                    <tr>
+                        <td><input class="form-control" type="text" name="org_name"></td>
+                        <td><input class="form-control" type="text" name="org_address"></td>
+                        <td><input class="form-control" type="text" name="designation"></td>
+                        <td><input class="form-control" type="text" name="income"></td>
+                    </tr>
+                  </template>
+                  
+                  <input type="submit" value="Add More" id="add" class="btn btn-info" onclick="table_column()">
+        </div>
+		</div>
+        <br>
+        <div class="card">
+        <div class="card-body">
+				<div class="jumbotron d-flex" id="jumbo">
+                    <label class="jumbo1">Are You Having a Link to Financial Institution? :</label>
+                    <div class="custom-contol custom-radio">
+                        <input class="custom-control-input" type="radio" id="yes" name="Financial" value="Yes">
+                        <label class="custom-control-label" for="yes">Yes</label>
+                    </div>
+                    <div class="custom-contol custom-radio">
+                        <input class="custom-control-input" type="radio" id="no" name="Financial" checked value="No">
+                        <label class="custom-control-label" for="no">No</label>
+                    </div>
+                </div>
+					<!-- <input type="radio" name="Financial" value="Yes" >
+					<label>Yes</label> -->
+					
+				<div class="jumbotron d-flex" id="jumbo">
+					<label class="jumbo1">Are You Associated with Any Criminal Activity Before? :</label>
+					<div class="custom-contol custom-radio">
+                        <input class="custom-control-input" type="radio" id="yes1" name="Criminal" value="Yes">
+                        <label class="custom-control-label" for="yes1">Yes</label>
+                    </div>
+                    <div class="custom-contol custom-radio">
+                        <input class="custom-control-input" type="radio" id="no1" name="Criminal" checked value="No">
+                        <label class="custom-control-label" for="no1">No</label>
+                    </div>
+				</div>
+				<div class="jumbotron d-flex" id="jumbo">
+                    <label class="jumbo1">Do You Have Nominee? :</label>
+                    <div class="custom-contol custom-radio">
+                        <input class="custom-control-input" id="selection1" type="radio" name="Nominee" value="charge">
+                        <label class="custom-control-label" for="selection1">Yes</label>
+                    </div>
+                    <div class="custom-contol custom-radio">
+                        <input class="custom-control-input" id="selection2" type="radio" name="Nominee" value="charge1" checked>
+                        <label class="custom-control-label" for="selection2">No</label>
+                    </div>
+                  </div>
+                  
+                  
+                  <table id="charge" class="charge-table table table-bordered table-striped">
+                    <thead>
+                      <tr>
+                        <th class="text-center">Nominee's Name</th c>
+                        <th class="text-center">Citizenship No.</th>
+                        <th class="text-center">Date of Issue(B.S.)</th>
+                        <th class="text-center">Place of Issue</th>
+                        <th class="text-center">Relation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><input type="text" class="form-control" name="nominee_name"></td>
+                        <td><input type="text" class="form-control" name="nominee_citizenshipNo"></td>
+                        <td><input type="text" id="nominee-date-of-issue" class="datePicker form-control" name="nominee-date-of-issue"></td>
+                        <td> <select id="nominee-select2" tabindex="9" name="nominee-place-of-issue" class="single form-control content">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="kathmandu">Kathmandu</option>
+                            <option value="nuwakot">Nuwakot</option>
+                            <option value="lalitpur">Lalitpur</option>
+                            <option value="bhaktapur">Bhaktapur</option>
+                        </select></td>
+                        <td><input type="text" class="form-control" name="nominee_relation"></td>
+                  
+                      </tr>
+                    </tbody>
+                    <!-- <tr>
+                      <td><input type="text" name="ttt"></td>
+                    </tr> -->
+                  </table>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <a href="upload.html" id="proceed" class="btn btn-primary">
+         Proceed  <i class="fa fa-caret-right"></i>
+</a>
+    <div style="min-height: 50px;"></div>
+</div>
+</div>
+
+    </div>
+    <footer>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul>
+                    <li id="fhead">Popular Products</li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">Mortgage Loan</a></li>
+                    <li><a href="">Business Loan</a></li>
+                    <li><a href="">KSBBL Remit</a></li>
+                    <li><a href="">Swarnim Surakchit Bachat Khata</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li id="fhead">Other Links</li>
+                    <li><a href="">Banking Hour</a></li>
+                    <li><a href="">Standard Tariff Charge</a></li>
+                    <li><a href="">Interest Rate</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <ul>
+                    <li id="fhead">Media</li>
+                    <li><a href="">News and Event</a></li>
+                    <li><a href="">Gallery</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <p id="right_footer"><u>Connect with us</u></p>
+                <ul class="d-flex" id="social_media">
+                    <li><i class="fa fa-facebook"><a href=""></a></i></li>
+                    <li class=><i class="fa fa-twitter"><a href=""></a></i></li>
+                    <li><i class="fa fa-youtube"><a href=""></a></i></li>
+                    <li><i class="fa fa-linkedin"><a href=""></a></i></li>
+                </ul>
+                <p id="right_footer"><u>Payment Partner</u></p>
+                <img id="esewa" src="img/esewa.png">
+            </div>
+        </div>
+        <hr>
+            <p class="text-center">Copyright &copy; 2020 by Kamana Sewa Bikas Bank Ltd.</p>
+        </div>
+    
+</footer>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="nepali.datepicker.js"></script>
+<script type="text/javascript">
+    function classToggle() {
+    const navs = document.querySelectorAll('.Navbar-items')
+    navs.forEach(nav => nav.classList.toggle('Navbar-toggleShow'));
+    }
+    document.querySelector('.Navbar-link-toggle')
+    .addEventListener('click', classToggle);
+
+
+    if(screen.width < 400){
+        var temp=document.getElementsByTagName("template")
+        // var temp = document.getElementById("mobile-table");
+        console.log(temp);
+        document.getElementById("desktop-table").innerHTML = temp.item(0).innerHTML;
+
+
+        var modal = document.getElementById('myModal'); 
+  
+        window.onclick = function(event) { 
+            if (event.target == modal) { 
+                modal.style.display = "none"; 
+            } 
+        } 
+        var add_more= document.getElementById('add');
+        add_more.style.display="none";
+        var add=document.getElementById('occupation_add');
+        // add.style.display="block";
+
+        var test1=document.getElementById('test1');
+        test1.innerHTML= add.innerHTML;
+
+    }
+</script>
+</body>    
+</html>
